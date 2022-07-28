@@ -1,12 +1,9 @@
-let buttonPlus = document.getElementById('buttonPlus');
-let buttonMinus = document.getElementById('buttonMinus');
-let buttonMultiply = document.getElementById('buttonMultiply');
-let buttonDevide = document.getElementById('buttonDevide');
-
+let operationButtons = document.getElementsByClassName('operation-button');
 let input1 = document.getElementById('number1');
 let input2 = document.getElementById('number2');
 
 function makeOperation(operationCode){
+
     var number1 = Number(input1.value);
     var number2 = Number(input2.value);
     
@@ -37,7 +34,6 @@ function onOperationButtonClick(evt) {
     makeOperation(operation);
 }
 
-buttonPlus.addEventListener('click', onOperationButtonClick);
-buttonMinus.addEventListener('click', onOperationButtonClick);
-buttonMultiply.addEventListener('click', onOperationButtonClick);
-buttonDevide.addEventListener('click', onOperationButtonClick);
+for (let i = 0; i < operationButtons.length; i++) {
+    operationButtons[i].addEventListener('click', onOperationButtonClick );
+}
