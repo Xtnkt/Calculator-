@@ -1,0 +1,20 @@
+.karas-calculator{
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: aliceblue;
+    padding: 20px;
+    border: 2px solid black;
+}
+.karas-calculator .operations-block button{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+.karas-calculator .inputs-block .input-block {
+    display: inline-block;
+    padding: 20px;
+}
+.karas-calculator .inputs-block .input-block label{
+    display: block;
+}
